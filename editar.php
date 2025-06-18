@@ -1,5 +1,5 @@
 <?php 
-$conexion = new mysqli("localhost", "root", "", "proyecto_basico");
+include 'conexion.php';
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $id = $_POST['id'];

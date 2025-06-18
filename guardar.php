@@ -1,9 +1,6 @@
 <?php
-$conexion = new mysqli("localhost", "root", "", "proyecto_basico");
-
-if ($conexion->connect_error) {
-    die("Error de conexión: " . $conexion->connect_error);
-}
+//conexion a bdd
+include 'conexion.php';
 
 $nombre = $_POST['nombre'];
 $apellido = $_POST['apellido'];
@@ -19,4 +16,6 @@ if ($conexion->query($sql) === TRUE) {
 } else {
     echo "Error: " . $conexion->error;
 }
+//no tengo idea
+
 ?>
